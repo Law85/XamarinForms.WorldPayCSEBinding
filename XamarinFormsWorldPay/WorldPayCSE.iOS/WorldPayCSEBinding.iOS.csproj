@@ -49,9 +49,15 @@
   <ItemGroup>
     <NativeReference Include="Native References/openssl.framework">
       <Kind>Framework</Kind>
+      <ForceLoad>False</ForceLoad>
+      <SmartLink>False</SmartLink>
+      <LinkerFlags>-ObjC</LinkerFlags>
     </NativeReference>
     <NativeReference Include="Native References/WorldpayCSE.framework">
       <Kind>Framework</Kind>
+      <ForceLoad>False</ForceLoad>
+      <SmartLink>False</SmartLink>
+      <LinkerFlags>-ObjC</LinkerFlags>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
